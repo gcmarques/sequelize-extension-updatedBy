@@ -46,10 +46,13 @@ await task1.save();
 console.log(task1.updatedBy);
 // 1
 
-await Task.update({
-  where: {...},
-  user: { id: 4 },
-});
+await Task.update(
+  {...}, // values
+  {
+    where: {...},
+    user: { id: 4 },
+  },
+);
 // All updated tasks will have updatedBy === 4
 ```
 
