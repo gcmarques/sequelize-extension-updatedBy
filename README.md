@@ -24,7 +24,7 @@ const Task = sequelize.define('task', {
 });
 
 extendSequelize([Task], {
-  createdBy: enhanceUpdatedBy(),
+  updatedBy: enhanceUpdatedBy(),
 });
 
 const task1 = await Task.create({...}, { user: { id: 2 } });
