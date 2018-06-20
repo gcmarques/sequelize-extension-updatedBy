@@ -1,6 +1,6 @@
 {
   "name": "sequelize-extension-updatedby",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This extension will automatically set updatedBy to options.user.id when an instance is updated.",
   "main": "index.js",
   "scripts": {
